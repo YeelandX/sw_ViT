@@ -1,0 +1,32 @@
+#!/usr/sw/swpython/bin/python3
+import sys
+import os
+
+if __name__ == '__main__':
+    lib_st_idx = -1
+    for i, v in enumerate(sys.argv):
+        if "-L" in str(v):
+            lib_st_idx = i
+            break
+
+    if lib_st_idx != -1:
+        cmd = ['swgcc', '-mdynamic']
+        cmd += sys.argv[1:lib_st_idx] + ['-L/usr/sw/swpython/lib'] + sys.argv[lib_st_idx:]
+    else:
+        cmd = ['swgcc']
+        cmd += sys.argv[1:]
+
+    fd = open('compile_cmd.sh', 'a')
+    fd.write(' '.join(cmd)+'\n')
+    fd.close()
+
+    for i, v in enumerate(sys.argv):
+        s = str(v)
+        if s == '-o':
+            output = str(sys.argv[i + 1])
+            if os.path.dirname(output):
+                os.makedirs(os.path.dirname(output), exist_ok=True)
+            with open(output, 'w') as f:
+                f.write("NULL")
+        if s == '-dumpfullversion':
+            print("7.1.0")
