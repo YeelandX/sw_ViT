@@ -15,7 +15,9 @@
 #include "util.h"
 
 #define REPEAT_N 5
-const char test_data[3][16] = {"./data/t_0", "./data/t_1", "./data/t_2"};
+const char test_data[10][16] = {"./data/t_0", "./data/t_1", "./data/t_2",
+	"./data/t_3", "./data/t_4", "./data/t_5", "./data/t_6", "./data/t_7",
+	"./data/t_8", "./data/t_9"};
 
 void run_and_check()
 {

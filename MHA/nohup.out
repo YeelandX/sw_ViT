@@ -1,0 +1,77 @@
+dispatching ...
+Job 53125091 has been finished.
+bsub -I -b -q q_sw_expr -share_size 6144 -host_stack 1024 -n 1 -cgsp 64 ./main
+Job <53125133> has been submitted to queue <q_sw_expr>
+waiting for dispatch ...
+INFO [function.c 72]: read_data => reading args from file ./data/t_0_arg 
+INFO [function.c 77]: read_data => multihead attention args 
+INFO [function.c 38]: print_arg => B: 1, S: 1024, D: 1024, N: 16 
+INFO [function.c 82]: read_data => reading data from file ./data/t_0_data 
+INFO [function.c 97]: read_data => total size of W: 5242880 
+INFO [main.c 35]: run_and_check => average time : 102.779 ms 
+INFO [main.c 38]: run_and_check => Passed 
+INFO [function.c 72]: read_data => reading args from file ./data/t_1_arg 
+INFO [function.c 77]: read_data => multihead attention args 
+INFO [function.c 38]: print_arg => B: 32, S: 1024, D: 768, N: 12 
+INFO [function.c 82]: read_data => reading data from file ./data/t_1_data 
+INFO [function.c 97]: read_data => total size of W: 52101120 
+INFO [main.c 35]: run_and_check => average time : 2140.919 ms 
+INFO [main.c 38]: run_and_check => Passed 
+INFO [function.c 72]: read_data => reading args from file ./data/t_2_arg 
+INFO [function.c 77]: read_data => multihead attention args 
+INFO [function.c 38]: print_arg => B: 64, S: 512, D: 768, N: 12 
+INFO [function.c 82]: read_data => reading data from file ./data/t_2_data 
+INFO [function.c 97]: read_data => total size of W: 52101120 
+INFO [main.c 35]: run_and_check => average time : 1917.409 ms 
+INFO [main.c 38]: run_and_check => Passed 
+INFO [function.c 72]: read_data => reading args from file ./data/t_3_arg 
+INFO [function.c 77]: read_data => multihead attention args 
+INFO [function.c 38]: print_arg => B: 32, S: 512, D: 1536, N: 24 
+INFO [function.c 82]: read_data => reading data from file ./data/t_3_data 
+INFO [function.c 97]: read_data => total size of W: 57409536 
+INFO [main.c 35]: run_and_check => average time : 2859.780 ms 
+INFO [main.c 38]: run_and_check => Passed 
+INFO [function.c 72]: read_data => reading args from file ./data/t_4_arg 
+INFO [function.c 77]: read_data => multihead attention args 
+INFO [function.c 38]: print_arg => B: 20, S: 768, D: 1024, N: 16 
+INFO [function.c 82]: read_data => reading data from file ./data/t_4_data 
+INFO [function.c 97]: read_data => total size of W: 34603008 
+INFO [main.c 35]: run_and_check => average time : 1455.482 ms 
+INFO [main.c 38]: run_and_check => Passed 
+INFO [function.c 72]: read_data => reading args from file ./data/t_5_arg 
+INFO [function.c 77]: read_data => multihead attention args 
+INFO [function.c 38]: print_arg => B: 1, S: 1024, D: 2048, N: 32 
+INFO [function.c 82]: read_data => reading data from file ./data/t_5_data 
+INFO [function.c 97]: read_data => total size of W: 16777216 
+INFO [main.c 35]: run_and_check => average time : 309.669 ms 
+INFO [main.c 38]: run_and_check => Passed 
+INFO [function.c 72]: read_data => reading args from file ./data/t_6_arg 
+INFO [function.c 77]: read_data => multihead attention args 
+INFO [function.c 38]: print_arg => B: 96, S: 512, D: 576, N: 6 
+INFO [function.c 82]: read_data => reading data from file ./data/t_6_data 
+INFO [function.c 97]: read_data => total size of W: 57618432 
+INFO [main.c 35]: run_and_check => average time : 2461.225 ms 
+INFO [main.c 38]: run_and_check => Passed 
+INFO [function.c 72]: read_data => reading args from file ./data/t_7_arg 
+INFO [function.c 77]: read_data => multihead attention args 
+INFO [function.c 38]: print_arg => B: 10, S: 768, D: 1024, N: 8 
+INFO [function.c 82]: read_data => reading data from file ./data/t_7_data 
+INFO [function.c 97]: read_data => total size of W: 18874368 
+INFO [main.c 35]: run_and_check => average time : 652.604 ms 
+INFO [main.c 38]: run_and_check => Passed 
+INFO [function.c 72]: read_data => reading args from file ./data/t_8_arg 
+INFO [function.c 77]: read_data => multihead attention args 
+INFO [function.c 38]: print_arg => B: 32, S: 500, D: 1024, N: 16 
+INFO [function.c 82]: read_data => reading data from file ./data/t_8_data 
+INFO [function.c 97]: read_data => total size of W: 35913728 
+INFO [main.c 35]: run_and_check => average time : 1534.153 ms 
+INFO [main.c 38]: run_and_check => Passed 
+INFO [function.c 72]: read_data => reading args from file ./data/t_9_arg 
+INFO [function.c 77]: read_data => multihead attention args 
+INFO [function.c 38]: print_arg => B: 100, S: 100, D: 1536, N: 24 
+INFO [function.c 82]: read_data => reading data from file ./data/t_9_data 
+INFO [function.c 97]: read_data => total size of W: 37797888 
+INFO [main.c 35]: run_and_check => average time : 1793.533 ms 
+INFO [main.c 38]: run_and_check => Passed 
+dispatching ...
+Job 53125133 has been finished.

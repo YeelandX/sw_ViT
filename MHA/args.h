@@ -23,7 +23,7 @@ typedef struct Args
     float* y; // output
 }Args, *Args_t;
 
-#define TEST_DATA_NUM 3
+#define TEST_DATA_NUM 10
 
 
 
